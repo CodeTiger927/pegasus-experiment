@@ -129,7 +129,7 @@ function stop_servers {
 
 # run_experiment executes the given experiment
 function run_experiment {
-  sudo /home/alexfan/pegasus-experiment/experiment$expno.sh "$slowdownip"
+  /home/alexfan/pegasus-experiment/experiment$expno.sh "$slowdownip"
 }
 
 # test_run is the main driver function
