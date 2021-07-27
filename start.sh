@@ -3,6 +3,8 @@
 
 set -ex
 
+cd ~
+
 # Server specific configs
 ##########################
 s1="10.2.2.5"
@@ -75,13 +77,13 @@ function start_db {
 # ycsb_load is used to run the ycsb load and wait until it completes.
 function ycsb_load {
   cd ~/pegasus-YCSB
-  ./bin/ycsb load pegasus -s -P "$workload" > outputLoad_"$expno"_"$iteration".txt
+  ./bin/ycsb load pegasus -s -P "$workload" > ~/pegasus-experiment/results/outputLoad_"$expno"_"$iteration".txt
 }
 
 # ycsb run exectues the given workload and waits for it to complete
 function ycsb_run {
   cd ~/pegasus-YCSB
-  ./bin/ycsb run pegasus -s -P "$workload" > outputRun_"$expno"_"$iteration".txt
+  ./bin/ycsb run pegasus -s -P "$workload" > ~/pegasus-experiment/results/outputRun_"$expno"_"$iteration".txt
 }
 
 function node_cleanup {
@@ -132,7 +134,7 @@ function run_experiment {
 function test_run {
   for (( i=1; i<=$iterations; i++ ))
   do
-  	iteration=$i
+    iteration=$i
     echo "Running experiment $expno - Trial $i"
     # 1. start servers
     #start_servers
