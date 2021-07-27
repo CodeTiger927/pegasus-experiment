@@ -8,19 +8,19 @@ OperationMode:writeMode=single,readMode=single
 OperationMode:writeMode=single,readMode=single
 OperationMode:writeMode=single,readMode=single
 OperationMode:writeMode=single,readMode=single
-[OVERALL], RunTime(ms), 104349.0
-[OVERALL], Throughput(ops/sec), 4791.612761023105
-[TOTAL_GCS_PS_Scavenge], Count, 246.0
-[TOTAL_GC_TIME_PS_Scavenge], Time(ms), 282.0
-[TOTAL_GC_TIME_%_PS_Scavenge], Time(%), 0.27024695972170315
+[OVERALL], RunTime(ms), 105177.0
+[OVERALL], Throughput(ops/sec), 4753.891059832473
+[TOTAL_GCS_PS_Scavenge], Count, 247.0
+[TOTAL_GC_TIME_PS_Scavenge], Time(ms), 285.0
+[TOTAL_GC_TIME_%_PS_Scavenge], Time(%), 0.27097179041045094
 [TOTAL_GCS_PS_MarkSweep], Count, 0.0
 [TOTAL_GC_TIME_PS_MarkSweep], Time(ms), 0.0
 [TOTAL_GC_TIME_%_PS_MarkSweep], Time(%), 0.0
-[TOTAL_GCs], Count, 246.0
-[TOTAL_GC_TIME], Time(ms), 282.0
-[TOTAL_GC_TIME_%], Time(%), 0.27024695972170315
+[TOTAL_GCs], Count, 247.0
+[TOTAL_GC_TIME], Time(ms), 285.0
+[TOTAL_GC_TIME_%], Time(%), 0.27097179041045094
 [CLEANUP], Operations, 10.0
-[CLEANUP], AverageLatency(us), 0.6
+[CLEANUP], AverageLatency(us), 0.4
 [CLEANUP], MinLatency(us), 0.0
 [CLEANUP], MaxLatency(us), 3.0
 [CLEANUP], 95.0thPercentileLatency(us), 3.0
@@ -28,11 +28,11 @@ OperationMode:writeMode=single,readMode=single
 [CLEANUP], 99.9thPercentileLatency(us), 3.0
 [CLEANUP], 99.99thPercentileLatency(us), 3.0
 [INSERT], Operations, 500000.0
-[INSERT], AverageLatency(us), 2079.003486
-[INSERT], MinLatency(us), 724.0
-[INSERT], MaxLatency(us), 270079.0
-[INSERT], 95.0thPercentileLatency(us), 3437.0
-[INSERT], 99.0thPercentileLatency(us), 6115.0
-[INSERT], 99.9thPercentileLatency(us), 10919.0
-[INSERT], 99.99thPercentileLatency(us), 15967.0
+[INSERT], AverageLatency(us), 2095.380268
+[INSERT], MinLatency(us), 709.0
+[INSERT], MaxLatency(us), 272383.0
+[INSERT], 95.0thPercentileLatency(us), 3495.0
+[INSERT], 99.0thPercentileLatency(us), 6223.0
+[INSERT], 99.9thPercentileLatency(us), 11247.0
+[INSERT], 99.99thPercentileLatency(us), 14887.0
 [INSERT], Return=OK, 500000
