@@ -100,25 +100,24 @@ function node_cleanup {
   sudo ./bin/zkServer.sh stop
   rm -rf ./logs/*
 
-  ssh -i ~/.ssh/id_rsa $username@"$s1" "sudo pkill -f pegasus"
+  ssh -i ~/.ssh/id_rsa $username@"$s1" "sudo pkill -f pegasus && sudo pkill -f deadloop"
   ssh -i ~/.ssh/id_rsa $username@"$s1" "sudo yum update -y && sudo yum install sudo wget unzip java-11-openjdk-devel python nc gcc-c++ libcgroup libcgroup-tools -y"
   ssh -i ~/.ssh/id_rsa $username@"$s1" "sudo rm -rf /pegasus"
   ssh -i ~/.ssh/id_rsa $username@"$s1" "sudo cgdelete cpu:db cpu:cpulow cpu:cpuhigh blkio:db memory:db ; true"
   ssh -i ~/.ssh/id_rsa $username@"$s1" "sudo /sbin/tc qdisc del dev eth0 root ; true"
   sleep 5
-  ssh -i ~/.ssh/id_rsa $username@"$s2" "sudo pkill -f pegasus"
+  ssh -i ~/.ssh/id_rsa $username@"$s2" "sudo pkill -f pegasus && sudo pkill -f deadloop"
   ssh -i ~/.ssh/id_rsa $username@"$s2" "sudo yum update -y && sudo yum install sudo wget unzip java-11-openjdk-devel python nc gcc-c++ libcgroup libcgroup-tools -y"
   ssh -i ~/.ssh/id_rsa $username@"$s2" "sudo rm -rf /pegasus"
   ssh -i ~/.ssh/id_rsa $username@"$s2" "sudo cgdelete cpu:db cpu:cpulow cpu:cpuhigh blkio:db memory:db ; true"
   ssh -i ~/.ssh/id_rsa $username@"$s2" "sudo /sbin/tc qdisc del dev eth0 root ; true"
   sleep 5
-  ssh -i ~/.ssh/id_rsa $username@"$s3" "sudo pkill -f pegasus"
+  ssh -i ~/.ssh/id_rsa $username@"$s3" "sudo pkill -f pegasus && sudo pkill -f deadloop"
   ssh -i ~/.ssh/id_rsa $username@"$s3" "sudo yum update -y && sudo yum install sudo wget unzip java-11-openjdk-devel python nc gcc-c++ libcgroup libcgroup-tools -y"
   ssh -i ~/.ssh/id_rsa $username@"$s3" "sudo rm -rf /pegasus"
   ssh -i ~/.ssh/id_rsa $username@"$s3" "sudo cgdelete cpu:db cpu:cpulow cpu:cpuhigh blkio:db memory:db ; true"
   ssh -i ~/.ssh/id_rsa $username@"$s3" "sudo /sbin/tc qdisc del dev eth0 root ; true"
-  sleep 5
-}
+  sleep 5}
 
 # stop_servers turns off the VM instances
 function stop_servers {
