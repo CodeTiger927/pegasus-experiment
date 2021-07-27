@@ -39,7 +39,7 @@ if [ "$#" -ne 3 ]; then
     echo "Wrong number of parameters"
     echo "1st arg - number of iterations"
     echo "2nd arg - workload path"
-    echo "3rd arg - experiment to run(1, 2, 3 only for hdd, 4 only for hdd, 5, 6 only for swapon+mem)"
+    echo "3rd arg - experiment to run(1, 2, 3, 4)"
     exit 1
 fi
 
