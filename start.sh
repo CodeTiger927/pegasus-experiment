@@ -18,6 +18,8 @@ s3name="pegasus-server-3"
 username="alexfan"
 ###########################
 
+slowdownip=$s2
+
 export M2_HOME=/usr/local/maven
 export PATH=${M2_HOME}/bin:${PATH}
 
@@ -127,7 +129,7 @@ function stop_servers {
 
 # run_experiment executes the given experiment
 function run_experiment {
-  ./experiment$expno.sh "$slowdownip" "$slowdownpid"
+  /home/alexfan/pegasus-experiment/experiment$expno.sh "$slowdownip"
 }
 
 # test_run is the main driver function
