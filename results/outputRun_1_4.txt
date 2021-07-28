@@ -8,17 +8,17 @@ OperationMode:writeMode=single,readMode=single
 OperationMode:writeMode=single,readMode=single
 OperationMode:writeMode=single,readMode=single
 OperationMode:writeMode=single,readMode=single
-[OVERALL], RunTime(ms), 150118.0
-[OVERALL], Throughput(ops/sec), 3330.713172304454
-[TOTAL_GCS_PS_Scavenge], Count, 245.0
-[TOTAL_GC_TIME_PS_Scavenge], Time(ms), 264.0
-[TOTAL_GC_TIME_%_PS_Scavenge], Time(%), 0.17586165549767516
+[OVERALL], RunTime(ms), 243547.0
+[OVERALL], Throughput(ops/sec), 2052.9918249865527
+[TOTAL_GCS_PS_Scavenge], Count, 247.0
+[TOTAL_GC_TIME_PS_Scavenge], Time(ms), 298.0
+[TOTAL_GC_TIME_%_PS_Scavenge], Time(%), 0.12235831276919855
 [TOTAL_GCS_PS_MarkSweep], Count, 0.0
 [TOTAL_GC_TIME_PS_MarkSweep], Time(ms), 0.0
 [TOTAL_GC_TIME_%_PS_MarkSweep], Time(%), 0.0
-[TOTAL_GCs], Count, 245.0
-[TOTAL_GC_TIME], Time(ms), 264.0
-[TOTAL_GC_TIME_%], Time(%), 0.17586165549767516
+[TOTAL_GCs], Count, 247.0
+[TOTAL_GC_TIME], Time(ms), 298.0
+[TOTAL_GC_TIME_%], Time(%), 0.12235831276919855
 [CLEANUP], Operations, 10.0
 [CLEANUP], AverageLatency(us), 0.8
 [CLEANUP], MinLatency(us), 0.0
@@ -27,12 +27,12 @@ OperationMode:writeMode=single,readMode=single
 [CLEANUP], 99.0thPercentileLatency(us), 4.0
 [CLEANUP], 99.9thPercentileLatency(us), 4.0
 [CLEANUP], 99.99thPercentileLatency(us), 4.0
-[INSERT], Operations, 500000.0
-[INSERT], AverageLatency(us), 2993.20754
-[INSERT], MinLatency(us), 598.0
-[INSERT], MaxLatency(us), 275199.0
-[INSERT], 95.0thPercentileLatency(us), 5503.0
-[INSERT], 99.0thPercentileLatency(us), 8423.0
-[INSERT], 99.9thPercentileLatency(us), 16671.0
-[INSERT], 99.99thPercentileLatency(us), 28303.0
-[INSERT], Return=OK, 500000
+[UPDATE], Operations, 500000.0
+[UPDATE], AverageLatency(us), 4854.98705
+[UPDATE], MinLatency(us), 613.0
+[UPDATE], MaxLatency(us), 508415.0
+[UPDATE], 95.0thPercentileLatency(us), 5887.0
+[UPDATE], 99.0thPercentileLatency(us), 10311.0
+[UPDATE], 99.9thPercentileLatency(us), 407295.0
+[UPDATE], 99.99thPercentileLatency(us), 451583.0
+[UPDATE], Return=OK, 500000
