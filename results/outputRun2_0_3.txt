@@ -1,0 +1,40 @@
+OperationMode:writeMode=single,readMode=single
+OperationMode:writeMode=single,readMode=single
+OperationMode:writeMode=single,readMode=single
+OperationMode:writeMode=single,readMode=single
+OperationMode:writeMode=single,readMode=single
+OperationMode:writeMode=single,readMode=single
+OperationMode:writeMode=single,readMode=single
+OperationMode:writeMode=single,readMode=single
+OperationMode:writeMode=single,readMode=single
+OperationMode:writeMode=single,readMode=single
+[OVERALL], RunTime(ms), 218645.0
+[OVERALL], Throughput(ops/sec), 2286.811955452903
+[TOTAL_GCS_PS_Scavenge], Count, 247.0
+[TOTAL_GC_TIME_PS_Scavenge], Time(ms), 274.0
+[TOTAL_GC_TIME_%_PS_Scavenge], Time(%), 0.1253172951588191
+[TOTAL_GCS_PS_MarkSweep], Count, 0.0
+[TOTAL_GC_TIME_PS_MarkSweep], Time(ms), 0.0
+[TOTAL_GC_TIME_%_PS_MarkSweep], Time(%), 0.0
+[TOTAL_GCs], Count, 247.0
+[TOTAL_GC_TIME], Time(ms), 274.0
+[TOTAL_GC_TIME_%], Time(%), 0.1253172951588191
+[CLEANUP], Operations, 10.0
+[CLEANUP], AverageLatency(us), 1.0
+[CLEANUP], MinLatency(us), 0.0
+[CLEANUP], MaxLatency(us), 3.0
+[CLEANUP], 50.0thPercentileLatency(us), 1.0
+[CLEANUP], 95.0thPercentileLatency(us), 3.0
+[CLEANUP], 99.0thPercentileLatency(us), 3.0
+[CLEANUP], 99.9thPercentileLatency(us), 3.0
+[CLEANUP], 99.99thPercentileLatency(us), 3.0
+[UPDATE], Operations, 500000.0
+[UPDATE], AverageLatency(us), 4361.118134
+[UPDATE], MinLatency(us), 761.0
+[UPDATE], MaxLatency(us), 312319.0
+[UPDATE], 50.0thPercentileLatency(us), 3911.0
+[UPDATE], 95.0thPercentileLatency(us), 7559.0
+[UPDATE], 99.0thPercentileLatency(us), 12135.0
+[UPDATE], 99.9thPercentileLatency(us), 31471.0
+[UPDATE], 99.99thPercentileLatency(us), 136447.0
+[UPDATE], Return=OK, 500000
